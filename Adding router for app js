@@ -1,0 +1,29 @@
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Login from './components/Login';
+import ProfileSearch from './components/ProfileSearch';
+import VideoUpload from './components/VideoUpload';
+import DataAnalysis from './components/DataAnalysis';
+import ViewerData from './components/ViewerData';
+import './styles/App.css';
+
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <div className="container">
+        <Switch>
+          <Route exact path="/" component={Login} />
+          <Route path="/profile-search" component={ProfileSearch} />
+          <Route path="/upload-video" component={VideoUpload} />
+          <Route path="/data-analysis" component={DataAnalysis} />
+          <Route path="/viewer-data" component={ViewerData} />
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
