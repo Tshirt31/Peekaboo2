@@ -1,0 +1,38 @@
+/* src/styles/ProfileSearch.css */
+.search-container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+}
+
+.search-container h2 {
+  margin-bottom: 20px;
+}
+
+.search-container form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #555;
+}
+
+.profile-result {
+  margin-top: 20px;
+}
