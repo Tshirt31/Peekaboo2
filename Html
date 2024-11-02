@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peekaboo App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Peekaboo App</h1>
+    <nav>
+      <ul>
+        <li><a href="#upload">Upload Video</a></li>
+        <li><a href="#analytics">View Analytics</a></li>
+        <li><a href="#profiles">Target Profiles</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="upload">
+      <h2>Upload Video</h2>
+      <form id="uploadForm">
+        <input type="file" id="videoUpload" accept="video/*">
+        <button type="submit">Upload Video</button>
+      </form>
+    </section>
+
+    <section id="profiles">
+      <h2>Target Profiles</h2>
+      <p>Select social media profiles to deploy videos:</p>
+      <form id="profileForm">
+        <input type="text" placeholder="Enter Profile ID (e.g., Twitter, Facebook)">
+        <button type="submit">Add Profile</button>
+      </form>
+    </section>
+
+    <section id="analytics">
+      <h2>View Analytics</h2>
+      <p>View data of profiles interacting with the uploaded videos.</p>
+      <button onclick="viewAnalytics()">View Data</button>
+      <div id="analyticsData">
+        <!-- Analytics data will be displayed here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Peekaboo App. All rights reserved.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
